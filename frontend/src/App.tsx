@@ -8,6 +8,7 @@ import {
     gql,
 } from '@apollo/client';
 import QueryComp from "./Query";
+import MutationComp from "./Mutation";
 
 
 const cache: InMemoryCache = new InMemoryCache({});
@@ -25,6 +26,7 @@ function App() {
       <ApolloProvider client={client} >
         <div className="App">
             <QueryComp />
+            <MutationComp />
         </div>
       </ApolloProvider>
   );
