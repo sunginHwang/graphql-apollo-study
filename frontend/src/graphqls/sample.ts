@@ -8,3 +8,4 @@ export const EXCHANGE_RATES = gql`
     }
   }
 `;
+

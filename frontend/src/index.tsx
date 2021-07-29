@@ -9,8 +9,11 @@ import {
 import './index.css';
 import App from './App';
 
+const tutorialUri = 'https://48p1r2roz4.sse.codesandbox.io';
+const dogUri = 'https://71z1g.sse.codesandbox.io';
+
 const client = new ApolloClient({
-    uri: 'https://48p1r2roz4.sse.codesandbox.io',
+    uri: dogUri,
     cache: new InMemoryCache(),
 });
 
