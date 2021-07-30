@@ -7,6 +7,15 @@ const resolvers = {
             };
         }
     },
+    Mutation: {
+        updateBook: (_, {title, author}) => {
+            console.log(title);
+            return {
+                title,
+                author
+            }
+        },
+    },
 };
 
 export default resolvers;

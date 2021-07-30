@@ -9,6 +9,10 @@ const typeDefs = gql`
     type Query {
         book: Book
     }
+    
+    type Mutation {
+      updateBook(title: String, author: String): Book
+    }
 `;
 
 export default typeDefs;
