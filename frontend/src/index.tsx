@@ -11,9 +11,9 @@ import App from './App';
 
 const tutorialUri = 'https://48p1r2roz4.sse.codesandbox.io';
 const dogUri = 'https://71z1g.sse.codesandbox.io';
-
+const todoUri = 'https://sxewr.sse.codesandbox.io/';
 const client = new ApolloClient({
-    uri: dogUri,
+    uri: todoUri,
     cache: new InMemoryCache(),
 });
 

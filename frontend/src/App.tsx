@@ -1,18 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import Dogs from "./components/dog/Dogs";
-import DogPhoto from "./components/dog/DogPhoto";
+import Todo from "./components/todo";
 
 function App() {
-    const [breed, setBreed] = useState('');
-    const onDogSelected = (e: any) => {
-        setBreed(e.target.value);
-    };
+
 
     return (
         <div className="App">
-            <Dogs onDogSelected={onDogSelected}/>
-            {breed !== '' && <DogPhoto breed={breed}/>}
+          <Todo />
         </div>
     );
 }
